@@ -1,6 +1,6 @@
 *
 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'poppins',sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -51,7 +51,7 @@ body{
     font-size: 22px;
     color:#fff;
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding: 0 48px 0 42px;
 }
 .search-box input::placeholder
@@ -117,7 +117,7 @@ body{
     display: flex;
     align-items: center;
     width:50%;
-    transform: translateY(-100%);
+    transform: translateY(-70%);
 }
 
 .weather-details.active .humidity ,
@@ -162,16 +162,21 @@ body{
     visibility: visible;
 }
 
-.weather-box .box,
-.not-found .box{
-    transform: translateY(-100%);
-    transition: transform 1s ease-in;
+.weather-box .box
+{
+    transform: translateY(-40%);
+    transition: transform 1s ease;
+}
+.not-found .box
+{
+    transform: translateY(-15%);
+    transition: transform 1s ease;
 }
 .weather-box.active .box,
 .not-found.active .box{
     transform: translateY(0%);
     transition: transform 1s ease-in;
-    transition-delay: .6s;
+    transition-delay: .7s;
 }
 
 .not-found
